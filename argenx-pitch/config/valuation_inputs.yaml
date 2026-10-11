@@ -1,0 +1,36 @@
+# argenx valuation inputs as of 2026-10-09.
+# Sourced company facts are separated from analyst assumptions.
+facts:
+  as_of: "2026-10-09"
+  price_usd: 825.03                    # Yahoo Finance close 2026-10-09; secondary market-data source
+  market_cap_usd_m_secondary: 51883    # Yahoo Finance intraday market cap at 2026-10-09 close
+  diluted_shares_m: 64.525             # Q2 2026 weighted-average diluted shares; EPS denominator, not point-in-time shares outstanding
+  basic_shares_m: 62.313               # Q2 2026 weighted-average basic shares
+  cash_and_current_financial_assets_usd_m: 5200  # 30 Jun 2026 company-reported
+  forte_headline_equity_value_usd_m: 2200         # announced transaction equity value
+  forte_incremental_cash_consideration_est_usd_m: 1816  # analyst estimate; excludes pre-owned stake; reconcile to Q3 cash flow
+  q2_2026_sales: 1516
+  h1_2026: {product_net_sales: 2813, operating_profit: 887, eps_diluted: 13.00}
+  h1_2025: {product_net_sales: 1739, operating_profit: 340, eps_diluted: 6.32}
+  eps_diluted_fy2025: 19.57
+  fy2025_sales: 4151.316
+  effective_tax_rate_h1_2026: 0.124
+
+# ANALYST ASSUMPTIONS, not company guidance.
+# H2 2026 QoQ assumptions are anchored to recent quarterly sales momentum but deliberately haircut.
+# Sjogren's contributes zero explicit revenue in all scenarios after the UNITY discontinuation.
+# Other pipeline programs are not modeled as discrete probability-weighted assets in these scenarios.
+scenarios:
+  bear: {qoq_h2_2026: 0.02, op_margin_2026_h2: 0.30, growth_2027: 0.12, op_margin_2027: 0.30, growth_2028: 0.08, op_margin_2028: 0.30, tax_rate: 0.18, net_financial_income_usd_m: 100, exit_pe: 18}
+  base: {qoq_h2_2026: 0.08, op_margin_2026_h2: 0.33, growth_2027: 0.25, op_margin_2027: 0.38, growth_2028: 0.18, op_margin_2028: 0.41, tax_rate: 0.15, net_financial_income_usd_m: 100, exit_pe: 25}
+  bull: {qoq_h2_2026: 0.12, op_margin_2026_h2: 0.35, growth_2027: 0.35, op_margin_2027: 0.40, growth_2028: 0.25, op_margin_2028: 0.43, tax_rate: 0.13, net_financial_income_usd_m: 100, exit_pe: 30}
+
+reverse_valuation:
+  years: 4
+  required_annual_returns: [0.08, 0.10, 0.12]
+  exit_pes: [20, 25, 30]
+  op_margin_2030: 0.40
+
+sensitivity:
+  growth_2027: [0.10, 0.15, 0.20, 0.25, 0.30, 0.35]
+  exit_pe: [18, 20, 22, 25, 28, 30]

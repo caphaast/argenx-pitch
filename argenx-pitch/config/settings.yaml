@@ -1,0 +1,24 @@
+# Fixed BEFORE looking at results. Do not tune against the events you are studying.
+tickers:
+  stock: ARGX        # Nasdaq ADS (1 ordinary share per ADS - verify in 20-F), USD
+  benchmark: XBI     # SPDR S&P Biotech ETF (equal-weight, so argenx is a small weight)
+start_date: "2023-01-01"
+end_date: null
+raw_dir: data/raw
+output_dir: outputs
+trading_days: 252
+market: nasdaq        # which exchange hours decide the event day (nasdaq | six)
+validation:
+  max_abs_daily_return: 0.25   # flag, never drop
+  max_gap_days: 7
+  stale_run_length: 5
+event_study:
+  events_file: data/events.csv
+  estimation_window: [-120, -21]
+  windows: [[0, 0], [0, 1], [-1, 1], [0, 5]]
+  min_estimation_obs: 60
+  placebo_exclusion_days: 6    # placebo windows must not sit within this many days of any event
+files:
+  sales: data/quarterly_sales.csv
+  pipeline: data/pipeline.csv
+  valuation_inputs: config/valuation_inputs.yaml

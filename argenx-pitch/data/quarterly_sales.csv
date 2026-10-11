@@ -1,0 +1,11 @@
+quarter,period_end,product_net_sales_usd_m,us_usd_m,japan_usd_m,row_usd_m,china_supply_usd_m,operating_profit_usd_m,source_url,source_type,notes
+2024Q1,2024-03-31,398,347,18,31,2,,https://www.sec.gov/Archives/edgar/data/1697862/000169786225000059/argxq3investorpresentati.htm,primary,"Sales rounded to $m (Q3 2025 investor presentation chart); regions same source"
+2024Q2,2024-06-30,478,407,20,37,14,,https://www.sec.gov/Archives/edgar/data/1697862/000169786225000059/argxq3investorpresentati.htm,primary,"Sales rounded to $m; also HY2025 release gives 478"
+2024Q3,2024-09-30,572.997,492,24,45,11,,https://argenx.com/news/2025/press-release-3177052,primary,"Exact sales from Q3 2025 release comparative"
+2024Q4,2024-12-31,736.968,649,27,48,12,,https://www.sec.gov/Archives/edgar/data/1697862/000169786226000010/a09earningspressreleaseq4.htm,primary,"Exact sales from FY2025 release comparative; regions from Q3 2025 deck (rounded)"
+2025Q1,2025-03-31,790,681,32,57,20,139,https://www.sec.gov/Archives/edgar/data/0001697862/000162828026031739/argxq1slides.htm,primary,"Operating profit from Q1 2026 slides comparative"
+2025Q2,2025-06-30,949,802,52,83,12,201,https://www.sec.gov/Archives/edgar/data/0001697862/000169786226000033/a04earningspressreleasehy.htm,primary,"Operating profit from HY2026 release comparative"
+2025Q3,2025-09-30,1126.961,964,60,94,9,346.2,https://argenx.com/news/2025/press-release-3177052,primary,"Operating profit DERIVED: FY2025 1053.806 minus H1 340 minus Q4 367.611"
+2025Q4,2025-12-31,1285.711,,,,,367.611,https://www.sec.gov/Archives/edgar/data/1697862/000169786226000010/a09earningspressreleaseq4.htm,primary,"Regional split not collected"
+2026Q1,2026-03-31,1298,,,,,394,https://www.sec.gov/Archives/edgar/data/0001697862/000162828026031739/argxq1slides.htm,primary,"Regional split not collected"
+2026Q2,2026-06-30,1516,,,,,494,https://www.sec.gov/Archives/edgar/data/0001697862/000169786226000033/a04earningspressreleasehy.htm,primary,"Regional split not collected"
