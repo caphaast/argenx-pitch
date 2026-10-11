@@ -1,6 +1,6 @@
 # argenx (ARGX) investment research pitch
 
-A reproducible, public-data investment research project prepared as an interview case study for a Sector Data Analyst-style role. It combines commercial trend analysis, a small event study, pipeline tracking, scenario valuation, and reverse valuation.
+A reproducible, public-data investment research project prepared as an interview case study. It combines commercial trend analysis, a small event study, pipeline tracking, scenario valuation, and reverse valuation.
 
 **As of:** 9 October 2026  
 **Reference price:** $825.03 (Yahoo Finance, secondary market data)  
